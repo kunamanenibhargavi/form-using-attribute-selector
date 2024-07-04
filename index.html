@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms_UI</title>
+    <style>
+        .div{
+            border: 2px  solid rgb(142, 233, 249);
+            border-radius: 15px;
+            background-color: rgb(236, 95, 246);
+            width: 500px;
+            height: 370px;
+            margin-left: 50px;
+        }
+        .reg{
+            margin-left: 30px;
+        }
+        input[placeholder="user_name"]{
+            background-color: rgb(120, 248, 205);
+            margin-left: 10px;
+        }
+        input[placeholder="e_mail"]{
+            background-color: rgb(164, 236, 232);
+            margin-left: 30px;
+        }
+        input[placeholder="Enter Your Number"]{
+            background-color: rgb(240, 193, 126);
+            margin-left: 10px;
+        }
+        input[name="password"]{
+            background-color: rgb(122, 241, 142);
+        }
+        input[type="radio"]{
+            background-color: rgb(243, 96, 145);
+            margin-left: 20px;
+        }
+        input[value="Fe-Male"]{
+            background-color: rgb(243, 241, 117);
+        }
+        input[placeholder$="D.O.B"]{
+            background-color: rgb(239, 239, 132);
+            margin-left: 30px;
+        }
+        input[type^="sub"]{
+            background-color: bisque;
+            margin-left: 20px;
+        }
+        textarea[id="addr"]{
+            background-color: rgb(123, 206, 247);
+            margin-left: 90px;
+        }
+        label[for]{
+            margin-left: 10px;
+        }
+        input[type="submit"]{
+            margin-left: 170px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="reg">Registration Form Using Attribute Selectors</h1>
+    <div class="div"><br>
+        <form action="">
+            <label for="user_name">Enter Your Name:-</label>
+            <input type="text" id="user_name" name="user_name" placeholder="user_name"><br><hr>
+            <label for="email">Enter Your Mail:</label>
+            <input type="text" id="email" name="mail" placeholder="e_mail"><br><hr>
+            <label for="m_num">Enter Your Number:</label>
+            <input type="text" id="m_num" name="number" placeholder="Enter Your Number"><br><hr>
+            <label for="password">Enter Your Password:</label>
+            <input type="password" id="password" required name="password" placeholder="Enter Your Password"><br><hr>
+            <label for="gender_1">Select your Gender:</label>
+             <input type="radio" id="gender_1" name="gender" value="Male"><label for="gender_1">Male</label>
+            <input type="radio" id="gender_2" name="gender" value="Fe-Male"><label for="gender_2">Fe-Male</label><br><hr>
+            <label for="dob">Select your DOb:</label>
+            <input type="month" id="dob" name="date" placeholder="Select_your_D.O.B"><br><hr>
+            <!-- <input type="text" id="address" name="addr" placeholder=""> -->
+            <label for="addr">Address:</label>
+            <textarea name="addr" id="addr" placeholder="mention your address" value="ur address goes here"></textarea><br><br>
+            <hr>
+            <input type="submit">
+        </form>
+    </div>
+</body>
+</html>
